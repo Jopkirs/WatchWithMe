@@ -6,16 +6,14 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
-@ToString
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Room {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @OneToMany
     private List<User> connectedUsers;

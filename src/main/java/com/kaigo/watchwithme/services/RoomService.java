@@ -15,8 +15,8 @@ public class RoomService {
         this.roomRepository = roomRepository;
     }
 
-    public void saveOrUpdateRoom(Room room){
-        roomRepository.save(room);
+    public Room saveOrUpdateRoom(Room room){
+        return roomRepository.save(room);
     }
 
     public Room getRoomById(long id){

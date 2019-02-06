@@ -30,10 +30,11 @@ public class SpringJPABootstrap implements ApplicationListener<ContextRefreshedE
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        loadRooms();
-        loadUsers();
+//        loadRooms();
+//        loadUsers();
     }
 
+    /*
     public void loadRooms() {
 
         Room room1 = new Room();
@@ -58,5 +59,5 @@ public class SpringJPABootstrap implements ApplicationListener<ContextRefreshedE
         user1.setSessionId("17483");
         userService.saveOrUpdateUser(user1);
     }
-
+*/
 }
